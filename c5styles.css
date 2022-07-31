@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body{
+    background-image: url("bg-desktop.svg");
+    background-color: var(--Violet);
+    width: 100%;
+}
+main {
+    width: 100%;
+}
+.Logo {
+   padding: 40px;
+}
+.container {
+    display: flex;
+    padding: 45px;
+}
+.mockupsimg {
+    padding-bottom: 10px;
+}
+.text {
+    padding-top: 45px;
+    padding-left: 35px;
+}
+.text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 1.4;
+    color: hsla(0, 0%, 100%, 0.90);
+}
+.text p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: 400;
+    font-size: 18px;
+    padding-top: 10px;
+    color: hsla(0, 0%, 100%, 0.78);
+}
+.reg {
+    padding-top: 30px;
+}
+.reg a{
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--Violet);
+    text-align: center;
+    box-shadow: 1px 1px 0 4px rgba(0, 0, 0, .15),
+    1px 1px 0px 1px rgba(148, 0, 211, .12);
+    margin-top: 20px;
+    padding:10px 45px;
+}.reg a:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+.icons {
+    margin-bottom: 40px;
+    text-align: center;
+    padding-left: 80%;
+    
+    
+}
+.fa {
+    padding: 15px 15px 15px 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    margin: 5px;
+    justify-content: space-between;
+}
+.fa:hover{
+    background-color: var(--Soft-Magenta);
+}
+/*media queries*/
+@media(max-width: 700px) {
+    body {
+        background-image: url("bg-mobile.svg");
+        background-color: var(--Violet);
+        background-repeat: no-repeat;
+    }
+    .main {
+        width: 30%;
+        align-items: center;
+    }
+    .container {
+        display: block;
+    }
+    .mockupsimg img {
+        width: 100%;
+    }
+    .text{
+        text-align: center;
+    }
+    .text h2{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .icons{
+        display: flex;
+        padding-left: 38%;
+
+    
+    }
+
+}
